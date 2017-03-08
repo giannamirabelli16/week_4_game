@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cyrstal Collector</title>
+	
+	<!-- Bootstrap File -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Special+Elite" rel="stylesheet">
+	
+	<!-- JQuery -->
+  	<script src="https://code.jquery.com/jquery.js"></script>
+
+  	<!-- <script async src="//jsfiddle.net/bootswatch/h3fgn55j/embed/js/"></script> -->
+  	<script src="assets/javascript/game.js"></script>
+</head>
+
+<div class="pagecontainer">
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Crystals  Collector!</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Instructions:</h2>
+		</div>
+		<div class="col-md-12">
+			<p>
+				You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random number, you lost eh game if your total score goes above the random number. The value dof each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.
+			</p>
+		</div>
+	</div>
+
+	<div class="cyrstalbuttoncontainer">
+		<div class="row">
+			<div class="col-md-3"><img id="crystal1" src="assets/images/whitecrystalheart.jpg" alt="crystalWhite"></div>
+			<div class="col-md-3"><img id="crystal2" src="assets/images/bluecrystalheart.jpg" alt="crystalBlue"></div>
+			<div class="col-md-3"><img id="crystal3" src="assets/images/pinkcrystalheart.jpg" alt="crystalPink"></div>
+			<div class="col-md-3"><img id="crystal4" src="assets/images/purplecrystalheart.jpg" alt="crystalPurple"></div>
+		</div>
+	</div>
+
+	<div class="scorecontainer">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Results:</h2>
+			</div>
+			<div class="col-md-12">
+				<!-- Random # computer chooses -->
+				<div>Target Number: <span class="targetnumber"></span></div>
+				<!--Sum of crystals player is adding -->
+				<div>Current Number: <span class="currentnumber"></span></div>
+				<div>Wins: <span class="wins"></span></div>
+				<div>Losses: <span class="losses"></span></div>
+				<div>Chances Remaining: <span class="chancesleft"></span></div>
+				<div>Your total score is: <span class="totalscore"></span></div>
+			</div>
+		</div>	
+	</div>
+
+</body>
+</div>
+</html>
